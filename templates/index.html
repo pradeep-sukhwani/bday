@@ -16,7 +16,7 @@
 {% endblock %}
 <script type="text/javascript" src="{% static 'js/balloons.js' %}"></script>
 <audio autoplay="autoplay" loop="loop">
-    <source src="https://storage.googleapis.com/expense-managment.appspot.com/backgroundBirthdayMusic.mp3" type="audio/mp3">
+    <source src="{% static 'music/backgroundBirthdayMusic.mp3' %}" type="audio/mp3">
     <p>If you are reading this, it is because your browser does not support the audio element.</p>
 </audio>
 {% block external_js %}
