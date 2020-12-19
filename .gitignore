@@ -131,4 +131,4 @@ dmypy.json
 
 na_bday/server_settings.py
 
-assets
+staticfiles
