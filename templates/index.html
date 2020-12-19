@@ -1,0 +1,24 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Happy Birthday">
+    <meta name="author" content="Pradeep Sukhwani">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="origin" name="referrer">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.png' %}"/>
+    <link rel="stylesheet" href="{% static 'css/balloons.css' %}">
+    {% block external_css %}{% endblock %}
+    <title>Happy Birthday!</title>
+</head>
+<body>
+{% block body %}
+{% endblock %}
+<script type="text/javascript" src="{% static 'js/balloons.js' %}"></script>
+<audio src="{% static 'music/backgroundBirthdayMusic.mp3' %}" autoplay loop>
+    <p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio>
+{% block external_js %}
+{% endblock %}
+</body>
+</html>
