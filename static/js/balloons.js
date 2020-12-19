@@ -108,7 +108,7 @@ class Canvas {
     this.textPosArr = [];
     // text
     this.fontSize = 500;
-    this.text = 'HAPPY BIRTHDAY!';
+    this.text = "HAPPY BIRTHDAY NIKITA!";
     this.randomMax = 80;
     // size
     if (this.width < 768) {
@@ -116,10 +116,9 @@ class Canvas {
       this.shapeNum = 50;
       this.randomMax = 80;
       this.shapeMaxSize = 100;
-      this.text = 'HAPPY BIRTHDAY!';
     }
   }
-  
+
   // init, render, resize
   init() {
     for (let i = 0; i < this.height; i += 4) {
@@ -164,7 +163,7 @@ class Canvas {
       this.particles[i].render(i);
     }
   }
-  
+
   resize() {
     this.shapes = [];
     this.textPosArr = [];
@@ -186,13 +185,7 @@ class Canvas {
     this.width = this.canvas.width = window.innerWidth;
     this.height = this.canvas.height = window.innerHeight;
     // size
-    if (this.width < 768) {
-      this.fontSize = 300;
-      this.text = 'HAPPY BIRTHDAY!';
-    } else {
-      this.fontSize = 300;
-      this.text = 'HAPPY BIRTHDAY!';
-    }
+    this.fontSize = 300;
     this.offInit();
   }
 }
@@ -284,7 +277,7 @@ class Shape {
       this.y = 0 + this.r;
     }
   }
-  
+
   wrapPosition() {
     if (this.y + this.r * 2 < 0) {
       this.y = Tool.randomNumber(canvas.height + this.r, canvas.height * 2);
