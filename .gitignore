@@ -130,3 +130,5 @@ dmypy.json
 .pyre/
 
 na_bday/server_settings.py
+
+assets
