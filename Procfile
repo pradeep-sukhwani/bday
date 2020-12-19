@@ -1,1 +1,1 @@
-web: gunicorn na_bday.wsgi
+web: gunicorn na_bday.asgi
