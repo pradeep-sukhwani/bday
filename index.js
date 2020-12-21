@@ -108,7 +108,7 @@ class Canvas {
     this.textPosArr = [];
     // text
     this.fontSize = 500;
-    this.text = "HAPPY BIRTHDAY!";
+    this.text = "HAPPY BIRTHDAY NIKITA!";
     this.randomMax = 80;
     // size
     if (this.width < 768) {
